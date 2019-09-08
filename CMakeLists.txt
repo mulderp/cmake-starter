@@ -11,14 +11,4 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/include/
 ) 
 
-set(APP_SOURCES src/main.cpp)
-set(LIB_SOURCES src/World.cpp)
-
-# creates ./build/bin/runner
-add_executable(${PROJECT_NAME} ${APP_SOURCES})
-
-# shared library
-set(LIBRARY_NAME World)
-add_library(${LIBRARY_NAME} SHARED ${LIB_SOURCES})
-target_link_libraries(${PROJECT_NAME} ${LIBRARY_NAME})
-
+add_subdirectory(src)
