@@ -39,3 +39,9 @@ make
 - https://github.com/Barthelemy/CppProjectTemplate
 - http://stackoverflow.com/questions/13521618/c-project-organisation-with-gtest-cmake-and-doxygen
 
+
+# Adding google test
+
+    $ git submodule init
+    $ git submodule update
+
